@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Offcanvas navbar template 路 Bootstrap v5.2</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/offcanvas-navbar/">
+    <link href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+    <link rel="icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#712cf9">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/5.2/examples/offcanvas-navbar/offcanvas.css" rel="stylesheet">
+    <script src="https://getbootstrap.com/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!--<script src="https://getbootstrap.com/docs/5.2/examples/offcanvas-navbar/offcanvas.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <body class="bg-light">
+      
+      
+    
+    <div id="masterUI">
+        
+        
+        
+        <div class="row" style="padding-left:10px; padding-right:10px;">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">Login</div>
+                <div class="card-body">
+                    <form>
+                        <div class="col-12">
+                            <label>Username</label>
+                            <input type="text" class="form-control" id="username">
+                        </div>
+                        <div class="col-12">
+                            <label>Password</label>
+                            <input type="password" class="form-control" id="password">
+                        </div>
+                        <div class="col-12" style="padding-top:10px;">
+                            <button style="float:right" class="btn btn-primary btn-sm" type="button" onclick="Verification(); return false;">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+    </div>
+    
+    
+
+
+    <script type="text/javascript">
+      
+      // https://obfuscator.io/
+      function _0x2329(_0x4857da,_0x4363a0){const _0x5dc70b=_0x5dc7();return _0x2329=function(_0x23290d,_0x55a42e){_0x23290d=_0x23290d-0x81;let _0x4e1ff6=_0x5dc70b[_0x23290d];return _0x4e1ff6;},_0x2329(_0x4857da,_0x4363a0);}const _0xda8659=_0x2329;(function(_0x27791d,_0x19a084){const _0x5c850f=_0x2329,_0x27acbb=_0x27791d();while(!![]){try{const _0x56e6a2=parseInt(_0x5c850f(0x88))/0x1+parseInt(_0x5c850f(0x96))/0x2+parseInt(_0x5c850f(0xa0))/0x3+-parseInt(_0x5c850f(0x9d))/0x4+parseInt(_0x5c850f(0x8d))/0x5*(-parseInt(_0x5c850f(0x8f))/0x6)+parseInt(_0x5c850f(0x85))/0x7+parseInt(_0x5c850f(0x94))/0x8;if(_0x56e6a2===_0x19a084)break;else _0x27acbb['push'](_0x27acbb['shift']());}catch(_0x3c2a9a){_0x27acbb['push'](_0x27acbb['shift']());}}}(_0x5dc7,0xdaaab),$(document)[_0xda8659(0x8b)](function(){const _0x7fc08a=_0xda8659;let _0x9517ab=sessionStorage[_0x7fc08a(0x91)](_0x7fc08a(0x90));if(_0x9517ab)$('#masterUI')[_0x7fc08a(0x99)](''),$[_0x7fc08a(0x9e)]({'url':_0x7fc08a(0x9f),'type':_0x7fc08a(0x95),'datatype':_0x7fc08a(0x93),'success':function(_0x241a06){$('#masterUI')['html'](_0x241a06);},'error':function(_0x5471d5){const _0xf17dbc=_0x7fc08a;console[_0xf17dbc(0x8e)](_0x5471d5);},'complete':function(_0x9a271c,_0x2d2432){const _0x103822=_0x7fc08a;console['log'](_0x103822(0x8a));}});else{}}));function _0x5dc7(){const _0x26e06b=['Logout','#masterUI','#password','#username','10442362RLsjxA','.container','.navbar-collapse','364807jOoSmg','open','Success','ready','Sufian','4182190uDFIVo','log','12ELpjhJ','auth','getItem','name','text','2976800lXhvpI','GET','2975692glumhY','reload','Has\x20permission\x20:','html','clear','val','removeClass','5115688yafCSi','ajax','dashboard.html','392814NHYZzp','setItem'];_0x5dc7=function(){return _0x26e06b;};return _0x5dc7();}function Verification(){const _0x2da619=_0xda8659;var _0x3b3ccc=$(_0x2da619(0x84))[_0x2da619(0x9b)](),_0x1d881d=$(_0x2da619(0x83))[_0x2da619(0x9b)]();if(_0x3b3ccc==_0x2da619(0x8c)&&_0x1d881d=='1234'){let _0x61c813=sessionStorage['getItem'](_0x2da619(0x90)),_0x1b488e=sessionStorage[_0x2da619(0x91)](_0x2da619(0x92));_0x61c813?(alert(_0x2da619(0x98)+_0x1b488e),$[_0x2da619(0x9e)]({'url':_0x2da619(0x9f),'type':'GET','datatype':_0x2da619(0x93),'success':function(_0x1782f5){const _0x25727b=_0x2da619;$(_0x25727b(0x82))[_0x25727b(0x99)](_0x1782f5);},'error':function(_0xc0591b){console['log'](_0xc0591b);},'complete':function(_0x2f0de4,_0x2cad34){const _0x3e6e60=_0x2da619;console[_0x3e6e60(0x8e)](_0x3e6e60(0x8a));}})):(sessionStorage[_0x2da619(0xa1)]('auth',!![]),sessionStorage[_0x2da619(0xa1)](_0x2da619(0x92),_0x2da619(0x8c)),$[_0x2da619(0x9e)]({'url':_0x2da619(0x9f),'type':_0x2da619(0x95),'datatype':_0x2da619(0x93),'success':function(_0x6ba281){const _0x722510=_0x2da619;$(_0x722510(0x82))[_0x722510(0x99)](_0x6ba281);},'error':function(_0x506d64){const _0x11440a=_0x2da619;console[_0x11440a(0x8e)](_0x506d64);},'complete':function(_0x30eb0d,_0x554987){const _0x484e38=_0x2da619;console[_0x484e38(0x8e)](_0x484e38(0x8a));}}));}else{}}function PageNav(_0x509a89){const _0x27ea8a=_0xda8659;_0x509a89==_0x27ea8a(0x81)?(sessionStorage[_0x27ea8a(0x9a)](),window['location'][_0x27ea8a(0x97)]()):$[_0x27ea8a(0x9e)]({'url':'page2.html','type':'GET','datatype':'text','success':function(_0x4a3a6d){const _0x81a142=_0x27ea8a;$(_0x81a142(0x87))[_0x81a142(0x9c)](_0x81a142(0x89)),$(_0x81a142(0x86))['html'](_0x4a3a6d);},'error':function(_0x2f89c6){console['log'](_0x2f89c6);},'complete':function(_0x53f130,_0xee6d58){const _0x2f728d=_0x27ea8a;console[_0x2f728d(0x8e)]('Success');}});}
+      
+      
+    </script>
+
+
+    <script type = "text/javascript" >
+      window.onbeforeunload = function() { return "Your work will be lost."; };
+
+      // function preventBack() {  window.history.forward();  }
+      // setTimeout("preventBack()", 0);
+      // window.onunload = function () { null;  };
+    </script>
+
+  </body>
+</html>
